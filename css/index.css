@@ -1,0 +1,526 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 100px;
+}
+
+body {
+  font-size: 14px;
+  background: url(../image/2.jpg) center center;
+  background-size: cover;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px;
+  }
+}
+
+@media screen and (min-width: 435px) {
+  html {
+    font-size: 58px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+a {
+  color: #000;
+}
+
+@font-face {
+  font-family: 'iconfont';
+  src: url("iconfont.eot");
+  src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 28px;
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  height: auto;
+  padding: 1rem 0rem;
+  font-size: 18px;
+}
+
+#header .iconfont {
+  font-weight: 800;
+}
+
+#header span {
+  width: 33.333%;
+  height: 100%;
+}
+
+#header .down {
+  float: left;
+  padding-left: 0.4rem;
+}
+
+#header .sing {
+  display: inline-block;
+  width: 33.33333%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  float: left;
+}
+
+#header .sing a {
+  display: block;
+  text-align: center;
+  margin-bottom: 0.2rem;
+  color: #fff;
+}
+
+#header .share {
+  text-align: right;
+  float: right;
+  padding-right: 0.4rem;
+}
+
+#center {
+  width: 100%;
+  height: 7.2rem;
+  overflow: hidden;
+}
+
+#center p {
+  display: block;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 0.2rem;
+  font-size: 16px;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#footer {
+  width: 100%;
+  height: 3.8rem;
+}
+
+#footer .f-top {
+  overflow: hidden;
+}
+
+#footer .f-top span {
+  float: left;
+}
+
+#footer .f-top .say {
+  float: left;
+  padding-left: 0.4rem;
+}
+
+#footer .f-top .fit {
+  float: right;
+  padding-right: 0.4rem;
+}
+
+#footer .time {
+  width: 100%;
+  height: 1rem;
+  overflow: hidden;
+  padding-left: 0.2rem;
+  padding-top: 0.4rem;
+}
+
+#footer .time .current {
+  width: 10%;
+  height: 100%;
+  float: left;
+  margin-right: 3%;
+  margin-top: -0.2rem;
+  color: #fff;
+}
+
+#footer .time .process {
+  width: 70%;
+  height: 4px;
+  float: left;
+  background: #BEBFC0;
+  position: relative;
+}
+
+#footer .time .process .p-i {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 26px;
+  height: 26px;
+  background: #FECD2D;
+  border-radius: 50%;
+}
+
+#footer .time .duration {
+  width: 10%;
+  height: 100%;
+  float: left;
+  margin-left: 3%;
+  margin-top: -0.2rem;
+  color: #fff;
+}
+
+#footer .bo span {
+  width: 20%;
+  height: 100%;
+  float: left;
+  display: block;
+  text-align: center;
+}
+
+#footer .bo span .iconfont {
+  color: #FECD2D;
+}
+
+#footer .bo span:nth-type-of(3) .iconfont {
+  font-size: 30px;
+}
+
+#footer .f-bottom {
+  width: 100%;
+  overflow: hidden;
+  padding: 0.4rem 0.9rem;
+  padding-bottom: 0;
+}
+
+#footer .f-bottom span {
+  width: 20%;
+  display: block;
+  float: left;
+  height: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+#footer .f-bottom span .iconfont {
+  color: #FECD2D;
+  font-weight: 400;
+}
+
+#list {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.4rem;
+  display: none;
+}
+
+#list #item-list {
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+  margin-bottom: 0.4rem;
+}
+
+#list #item-list li {
+  width: 25%;
+  float: left;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#list #item-list li a {
+  padding: 0.4rem;
+  background: #000;
+  display: block;
+  margin: auto;
+  margin-right: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+
+#list #item-list li span {
+  color: #fff;
+  text-align: center;
+  display: block;
+}
+
+#list .labas {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#list .labas .laba {
+  width: 20%;
+  float: left;
+  display: block;
+}
+
+#list .labas #vloume {
+  margin-top: 0.2rem;
+  width: 70%;
+  height: 4px;
+  float: left;
+  background: #BEBFC0;
+  position: relative;
+}
+
+#list .labas #vloume #v-i {
+  position: absolute;
+  left: 0;
+  top: -10px;
+  width: 26px;
+  height: 26px;
+  background: #FECD2D;
+  border-radius: 50%;
+}
+
+#list .quxiao {
+  width: 100%;
+  height: auto;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+}
+
+#song {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#song h2 {
+  color: #fff;
+  position: relative;
+  line-height: 34px;
+  padding-left: 0.2rem;
+}
+
+#song ul li {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  line-height: 34px;
+  border-top: 1px solid #C0C0C0;
+  position: relative;
+}
+
+#song ul li .song {
+  padding-left: 0.2rem;
+  width: 70%;
+  float: left;
+  color: #fff;
+}
+
+#song ul li .jie {
+  width: 15%;
+  float: left;
+  color: #FECD2D;
+}
+
+#song ul li .delete {
+  width: 15%;
+  float: left;
+  text-align: center;
+}
+
+#song .close {
+  width: 100%;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+#my {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#my #header {
+  padding: 0.8rem 0.4rem;
+}
+
+#my #header .my, #my #header .le, #my #header .chang {
+  width: 33.333%;
+  line-height: 34px;
+  height: auto;
+  float: left;
+  color: #fff;
+  text-align: center;
+}
+
+#my #con {
+  padding: 0.2rem;
+  width: 100%;
+  height: auto;
+}
+
+#my #con .user {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#my #con .user .photo {
+  float: left;
+  width: 60px;
+  height: 60px;
+  background: url(../image/1.jpg);
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 0.4rem;
+}
+
+#my #con .user .login {
+  color: #fff;
+  float: left;
+  line-height: 60px;
+}
+
+#my #con .list-item {
+  padding: 0.2rem 0.4rem;
+  overflow: hidden;
+}
+
+#my #con .list-item li {
+  width: 20%;
+  float: left;
+}
+
+#my #con .list-item li a {
+  display: block;
+  text-align: center;
+}
+
+#my #con .list-item li span {
+  margin: 0.2rem;
+  display: block;
+  color: #FECD2D;
+  text-align: center;
+}
+
+#my #con .mysong {
+  width: 100%;
+  height: auto;
+}
+
+#my #con .mysong h2, #my #con .mysong h3 {
+  color: #fff;
+  line-height: 24px;
+}
+
+#my #con .mysong .like {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin: 0.4rem;
+}
+
+#my #con .mysong .like .color {
+  width: 60px;
+  height: 60px;
+  float: left;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+  background: url(../image/2.jpg);
+  background-size: cover;
+}
+
+#my #con .mysong .like span {
+  line-height: 60px;
+  color: #fff;
+  float: left;
+}
+
+#my #footer {
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 0.2rem;
+}
+
+#my #footer .img {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  overflow: hidden;
+  background: url(../image/2.jpg);
+  background-size: cover;
+  margin-right: 0.4rem;
+}
+
+#my #footer .song {
+  color: #fff;
+  width: 20%;
+  float: left;
+}
+
+#my #footer .song span {
+  display: block;
+  line-height: 24px;
+}
+
+#my #footer .iconfont {
+  padding-top: 0.2rem;
+  font-family: "iconfont" !important;
+  font-size: 30px;
+  color: #FECD2D;
+  display: block;
+  width: 20%;
+  float: left;
+  line-height: 24px;
+  text-align: right;
+}
